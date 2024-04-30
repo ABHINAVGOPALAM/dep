@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML API</title>
+</head>
+<body>
+    <div class="login">
+        <h1>Car Price Analysis</h1>
+        <img src="C:\Users\DELL\OneDrive\Desktop\fiat 500 folder\templates\Fiat_500_(2007)_02.jpeg" alt="Fiat500_Car_Img">
+        <form action="{{url_for('predict')}}" method="post">
+            <input type="number" name="engine power" placeholder="Engine power">
+            <input type="number" name="age and age" placeholder="Age and Age" required>
+            <input type="number" name="kilometers" placeholder="Kilometers" required >
+            <input type="number" name="previous owner" placeholder="Previous Owner" required >
+            <input type="number" name="longue" placeholder="Longue" required>
+            <input type="number" name="pop" placeholder="Pop"required >
+            <input type="number" name="sport" placeholder="Sport" required> 
+            <button type="submit">predict</button>     
+        </form>
+        {{prediction_text}}
+    </div>
+</body>
+</html>
