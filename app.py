@@ -20,5 +20,5 @@ def predict():
    
     return render_template('index.html',prediction_text='Estimated car price ${}'.format(prediction))
 
-if _name=="main_":
+if __name__=="main_":
     app.run(debug=True)

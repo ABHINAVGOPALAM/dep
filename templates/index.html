@@ -8,15 +8,15 @@
 <body>
     <div class="login">
         <h1>Car Price Analysis</h1>
-        <img src="C:\Users\DELL\OneDrive\Desktop\fiat 500 folder\templates\Fiat_500_(2007)_02.jpeg" alt="Fiat500_Car_Img">
+        <img src="" alt="Fiat500_Car_Img">
         <form action="{{url_for('predict')}}" method="post">
-            <input type="number" name="engine power" placeholder="Engine power">
-            <input type="number" name="age and age" placeholder="Age and Age" required>
-            <input type="number" name="kilometers" placeholder="Kilometers" required >
-            <input type="number" name="previous owner" placeholder="Previous Owner" required >
-            <input type="number" name="longue" placeholder="Longue" required>
-            <input type="number" name="pop" placeholder="Pop"required >
-            <input type="number" name="sport" placeholder="Sport" required> 
+            <input type="number" name="engine power" placeholder="Engine power"><br>
+            <input type="number" name="age and age" placeholder="Age and Age" required><br>
+            <input type="number" name="kilometers" placeholder="Kilometers" required ><br>
+            <input type="number" name="previous owner" placeholder="Previous Owner" required ><br>
+            <input type="number" name="longue" placeholder="Longue" required><br>
+            <input type="number" name="pop" placeholder="Pop"required ><BR>
+            <input type="number" name="sport" placeholder="Sport" required><BR> 
             <button type="submit">predict</button>     
         </form>
         {{prediction_text}}
